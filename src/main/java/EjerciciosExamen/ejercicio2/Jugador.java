@@ -7,7 +7,7 @@ public abstract class Jugador {
     private String ranking;
     protected IChat chatJuego;
 
-    public Jugador(IChat chatJuego, String alias, String nombre, String ranking){
+    public Jugador(IChat chatJuego, String alias, String nombre, String ranking) {
         this.chatJuego = chatJuego;
         this.alias = alias;
         this.nombre = nombre;
@@ -37,11 +37,9 @@ public abstract class Jugador {
     public void setRanking(String ranking) {
         this.ranking = ranking;
     }
-
     public IChat getChatJuego() {
         return chatJuego;
     }
-
     public void setChatJuego(IChat chatJuego) {
         this.chatJuego = chatJuego;
     }

@@ -3,11 +3,11 @@ package EjerciciosExamen.ejercicio2;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ChatEquipo implements IChat{
+public class ChatGlobal  implements IChat{
 
     private List<Jugador> jugadorList = new ArrayList<>();
 
-    public ChatEquipo addJugador(Jugador jugador) {
+    public ChatGlobal addJugador(Jugador jugador) {
 
         jugadorList.add(jugador);
         return this;
