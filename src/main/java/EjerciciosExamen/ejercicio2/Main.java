@@ -2,20 +2,20 @@ package EjerciciosExamen.ejercicio2;
 
 public class Main {
 
-    ChatEquipo chatJuegosMismoEquipo = new ChatEquipo();
-    ChatGlobal chatJuegoDiferenteEquipo = new ChatGlobal();
+    ChatEquipo chatEquipo = new ChatEquipo();
+    ChatGlobal chatGlobal = new ChatGlobal();
 
-    Estudiante estudiante1 = new Estudiante(chatJuegosMismoEquipo, "Dalas", "Daniel", "8");
-    Estudiante estudiante2 = new Estudiante(chatJuegosMismoEquipo, "Javi", "Javier", "5");
-    Estudiante estudiante3 = new Estudiante(chatJuegosMismoEquipo, "Lada", "Laura", "4");
-    Estudiante estudiante4 = new Estudiante(chatJuegosMismoEquipo, "Nauter", "Marcos", "1");
+    Estudiante estudiante1 = new Estudiante(chatEquipo, "Dalas", "Daniel", "8");
+    Estudiante estudiante2 = new Estudiante(chatEquipo, "Javi", "Javier", "5");
+    Estudiante estudiante3 = new Estudiante(chatEquipo, "Lada", "Laura", "4");
+    Estudiante estudiante4 = new Estudiante(chatEquipo, "Nauter", "Marcos", "1");
 
-    Docente docente1 = new Docente(chatJuegosMismoEquipo, "Pepe", "Jose", "5");
-    Docente docente2 = new Docente(chatJuegosMismoEquipo, "Wismichu", "Ismael", "9");
-    Docente docente3 = new Docente(chatJuegosMismoEquipo, "Miare", "Maria", "7");
-    Docente docente4 = new Docente(chatJuegosMismoEquipo, "Jason", "Jorge", "1");
+    Docente docente1 = new Docente(chatEquipo, "Pepe", "Jose", "5");
+    Docente docente2 = new Docente(chatEquipo, "Wismichu", "Ismael", "9");
+    Docente docente3 = new Docente(chatEquipo, "Miare", "Maria", "7");
+    Docente docente4 = new Docente(chatEquipo, "Jason", "Jorge", "1");
 
-        chatJuegosMismoEquipo.addJugador(estudiante1).addJugador(estudiante2).addJugador(estudiante3).addJugador(estudiante4)
+        chatEquipo.addJugador(estudiante1).addJugador(estudiante2).addJugador(estudiante3).addJugador(estudiante4)
                 .addJugador(docente1).addJugador(docente2).addJugador(docente3).addJugador(docente4);
 
 
@@ -25,18 +25,18 @@ public class Main {
 
 
 
-        estudiante1.setChatJuegos(chatJuegoDiferenteEquipo);
-        estudiante2.setChatJuegos(chatJuegoDiferenteEquipo);
-        estudiante3.setChatJuegos(chatJuegoDiferenteEquipo);
-        estudiante4.setChatJuegos(chatJuegoDiferenteEquipo);
+        estudiante1.setChatJuegos(chatGlobal);
+        estudiante2.setChatJuegos(chatGlobal);
+        estudiante3.setChatJuegos(chatGlobal);
+        estudiante4.setChatJuegos(chatGlobal);
 
-        docente1.setChatJuegos(chatJuegoDiferenteEquipo);
-        docente2.setChatJuegos(chatJuegoDiferenteEquipo);
-        docente3.setChatJuegos(chatJuegoDiferenteEquipo);
-        docente4.setChatJuegos(chatJuegoDiferenteEquipo);
+        docente1.setChatJuegos(chatGlobal);
+        docente2.setChatJuegos(chatGlobal);
+        docente3.setChatJuegos(chatGlobal);
+        docente4.setChatJuegos(chatGlobal);
 
 
-        chatJuegoDiferenteEquipo.addJugador(estudiante1).addJugador(estudiante2).addJugador(estudiante3).addJugador(estudiante4)
+        chatGlobal.addJugador(estudiante1).addJugador(estudiante2).addJugador(estudiante3).addJugador(estudiante4)
                 .addJugador(docente1).addJugador(docente2).addJugador(docente3).addJugador(docente4);
 
         System.out.println("/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*");
@@ -48,7 +48,7 @@ public class Main {
 
 
 
-}
+    }
 
 
 
